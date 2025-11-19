@@ -1,11 +1,11 @@
 pipeline{
   agent any
-  tools(
+  tools{
     maven 'devops_maven'
-  )
-  triggers(
+  }
+  triggers{
     githubPush()
-  )
+  }
   enviroment(
     POM="jugandoArreglos/pom.xml"
   )
