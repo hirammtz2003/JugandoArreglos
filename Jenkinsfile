@@ -26,13 +26,13 @@ pipeline{
       }
       post{
         always{
-          junit 'jugandoArreglos/target/surefire-reports/*.xml'
+          junit 'JugandoArreglos/target/surefire-reports/*.xml'
         }
       }
     }
     stage('Empaquetado'){
       steps{
-        archiveArtifacts artifacts: 'jugandoArreglos/target/*.jar', fingerprint:true
+        archiveArtifacts artifacts: 'JugandoArreglos/target/*.jar', fingerprint:true
       }
     }
   }
