@@ -6,7 +6,7 @@ pipeline{
   triggers{
     githubPush()
   }
-  enviroment{
+  environment{
     POM="jugandoArreglos/pom.xml"
   }
   stages{
@@ -32,7 +32,7 @@ pipeline{
     }
     stage('Empaquetado'){
       steps{
-        archiveArtifacts artifacs: 'jugandoArreglos/target/*.jar', fingerprint:true
+        archiveArtifacts artifacts: 'jugandoArreglos/target/*.jar', fingerprint:true
       }
     }
   }
