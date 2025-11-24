@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
 
-/*Prueba*/
+/*Prueba 2*/
 
 import com.mycompany.jugandoarreglos.OperacionesArreglos;
 import org.junit.jupiter.api.BeforeEach;
